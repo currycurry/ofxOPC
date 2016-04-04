@@ -13,7 +13,7 @@ void ofxOPC::setup(string address, int port)
     _address = address;
     
 
-    labels.load( "../../../resources/Verdana.ttf", 13);
+    labels.load( "Verdana.ttf", 13);
 
     connectionAttempts = 0;
     tryReconnecting = false;

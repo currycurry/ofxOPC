@@ -69,8 +69,8 @@ class Effects {
 
             moveCounter = 0;
             
-            dot.load("../../../resources/dot.png");
-            ringImage.load("../../../resources/ring.png");
+            dot.load("dot.png");
+            ringImage.load("ring.png");
             
             noiseImage.allocate(stageWidth/4, stageHeight/4, OF_IMAGE_GRAYSCALE);
             colorFadeImage.allocate(stageWidth/4, stageHeight/4, OF_IMAGE_COLOR_ALPHA);
@@ -103,6 +103,7 @@ class Effects {
         //----------------------------------------------------------
         void draw(int mode){
             switch (mode) {
+                
                 case 0:
                 {
                     // Mouse Circle
@@ -350,6 +351,13 @@ class Effects {
                     ofDrawRectangle(0, 0, _stageWidth, _stageHeight);
                     ofPopStyle();
                     ofPopMatrix();
+                }
+                    break;
+                    
+                case 16:
+                {
+                    
+                    
                 }
                     break;
                 default:

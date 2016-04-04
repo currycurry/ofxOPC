@@ -15,12 +15,20 @@ class ofxNeoPixelStrip : public ofxNeoPixelObject {
     
         //! Constructor
         ofxNeoPixelStrip(int posx, int posy,int numberOfLeds,int spacing);
+        ofxNeoPixelStrip(int posx, int posy,int numberOfLeds,int spacing, float angle);
+
     
         //! Setup Strip
         void setupLedStrip(int posx, int posy,int numberOfLeds,int spacing);
+        void setupLedStrip(int posx, int posy,int numberOfLeds,int spacing, float angle);
+
     
         void drawGrabRegion(bool hideArea);
         void draw(int x, int y);
+    
+        float rotation_angle;
+        int led_radius;
+    
 
     private:
     

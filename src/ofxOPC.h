@@ -1,5 +1,5 @@
 //
-//  ofxOPC.cpp
+//  ofxOPC_fp.cpp
 //  openPixelControl
 //
 //  Created by David Haylock on 25/05/2014.
